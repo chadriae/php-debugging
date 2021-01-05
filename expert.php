@@ -125,13 +125,13 @@ function copyright($year)
 copyright(date('Y'));
 
 
-// solution: 
+// solution: return only works when on 1 line, || replaced by &&
 new_exercise(8);
 function login(string $email, string $password)
 {
     if ($email == 'john@example.be' && $password == 'pocahontas') {
-        return 'Welcome John';
-        return ' Smith';
+        return 'Welcome John Smith';
+        // return ' Smith';
     }
     return 'No access';
 }
