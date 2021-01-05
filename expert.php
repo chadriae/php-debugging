@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 // Below are several code blocks, read them, understand them and try to find whats wrong.
 // Once this exercise is finished, we'll go over the code all together and we can share how we debugged the following problems.

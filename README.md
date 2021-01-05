@@ -17,3 +17,5 @@ Must-have: Exercises 1 - 5
 
 - VSCode: PHP, Markdown
 - MAMP
+
+Original repo [here](https://github.com/becodeorg/gnt-verou-1-26/tree/master/3.The-Mountain/1.PHP-debugging).
