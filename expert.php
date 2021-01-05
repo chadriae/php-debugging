@@ -143,3 +143,29 @@ echo login('john@example.be', 'dfgidfgdfg');
 //Should say: no access
 echo login('wrong@example', 'wrong');
 /* You can change code again */
+
+
+// solution: strpos never returns true, use false
+new_exercise(9);
+function isLinkValid(string $link)
+{
+    $unacceptables = array('https:', '.doc', '.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
+
+    foreach ($unacceptables as &$unacceptable) {
+        if (strpos($link, $unacceptable, 0) !== FALSE) {
+            echo 'Unacceptable Found<br />';
+            return;
+        }
+    }
+    echo 'Acceptable<br />';
+}
+//invalid link
+isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+isLinkValid('https://google.com/');
+//invalid link
+isLinkValid('https://google.com/test.bmp');
+//VALID link
+isLinkValid('http://google.com');
+//VALID link
+isLinkValid('http://google.com/test.txt');
