@@ -88,7 +88,7 @@ function combineNames($str1 = "", $str2 = "")
             $param = randomHeroName();
         }
     }
-    return implode("  ", $param);
+    return implode(" - ", $param);
 }
 
 
