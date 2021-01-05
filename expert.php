@@ -41,9 +41,9 @@ echo $monday;
 new_exercise(3);
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
-// solution: use single punctuation marks
-$str = 'Debugged! Also very fun';
-echo substr($str, 0, 10);
+// solution: 
+$str = '"Debugged!" Also very fun';
+echo substr($str, 0, 12);
 
 
 new_exercise(4);
