@@ -169,3 +169,18 @@ isLinkValid('https://google.com/test.bmp');
 isLinkValid('http://google.com');
 //VALID link
 isLinkValid('http://google.com/test.txt');
+
+
+// solution: use array_intersect to look for the matching values and keep only the matching ones
+// array_diff to look for the differences and keep them
+new_exercise(10);
+
+//Filter the array $areTheseFruits to only contain valid fruits
+//do not change the arrays itself
+$areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
+$validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
+//from here on you can change the code
+
+$areTheseFruits = array_intersect($areTheseFruits, $validFruits);
+
+var_dump($areTheseFruits);//do not change this
