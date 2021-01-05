@@ -113,3 +113,13 @@ function randomHeroName()
 }
 
 echo "Here is the name: " . combineNames();
+
+
+// solution: get rid of int and write print/echo in stead of return
+new_exercise(7);
+function copyright($year)
+{
+    print "&copy; $year BeCode";
+}
+//print the copyright
+copyright(date('Y'));
